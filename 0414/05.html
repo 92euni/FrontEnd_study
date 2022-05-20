@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 속성 - 화면에 보여주는 방식을 선언하는 스타일</title>
+    <style>
+        body > *{
+            background-color:lavender;
+            margin: 20px;
+          
+        }
+        img, a, span, strong{
+            display: inline-block;
+            /* 인라인 태그에 크기를 주고 싶으면 display:block; 써야 한다 */
+            width: 150px;
+            height: 30px;
+        }
+        div, p, ul, li, h1{
+            display:block;
+            background-color:darkseagreen;
+         }
+         /* 
+         display : 화면 보여주는 방식
+         display : none; : 화면에서 숨김
+         display : block; : 블록레벨요소 만듦(화면에 보여줌)
+         dispaly : inline; : 인라인레벨로 만듦
+         display : inline-block; : 인라인레벨이면서 가로값과 세로값이 적용됨
+          */
+     
+   
+
+
+    </style>
+</head>
+<body>
+   <img alt="img" />
+   <img alt="img" />
+   <img alt="img" />
+   <img alt="img" />
+
+   <a href="#">button</a>
+   <a href="#">button</a>
+   <a href="#">button</a>
+   <a href="#">button</a>
+
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+
+    <strong>strong</strong>
+    <strong>strong</strong>
+     <strong>strong</strong>
+
+    <br><br><br><br><br>
+
+    <div>div</div>
+    <div>div</div>
+    <div>div</div>
+
+    <p>ppppp</p>
+    <p>ppppp</p>
+    <p>ppppp</p>
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <h1>hhhhh</h1>
+    <h1>hhhhh</h1>
+    <h1>hhhhh</h1>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 속성 - 글자</title>
+    <style>
+        #title{
+            font-family: '맑은고딕';
+            font-size: 16px;
+            color:#6625b0;
+            font-weight: 900;  
+        }
+        #title01{
+            font-variant:small-caps
+        }
+        .text{
+            background-color: antiquewhite;
+            font-size: 20px;
+            line-height: 2;
+            /* 행간 : 글자크기 + 행간을 해야 겹치지 않고 내가 원하는 5만큼 벌어진다 */
+            /* 1 = 100%이다 여기서는 20px이 100이다*/
+            /* 1.2로 해서 간격을 쪼금 더 넓힌다 */
+
+            letter-spacing: 0px;
+            /* 자간 */
+
+            word-spacing: 30px;
+            /* 단어사이 공간 : 띄워쓰기 하나하나가 한단어로 인식함 */
+            
+            text-align: center;
+            /* 인라인 태그는 정렬을 할 수 없다 */
+
+            vertical-align: auto;
+            /* 높이값이 있어야 한다 / 자기자신말고 옆에있는 text나 다른것이 움직인다 */
+
+        }.ttt01{
+            text-decoration: underline;
+            text-transform: none;
+            
+        }
+        .ttt02{
+            text-decoration: line-through;
+            text-transform: capitalize;
+        }
+        .ttt03{
+            text-decoration: overline;
+            text-transform: lowercase;
+        }
+        .ttt04{
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+    </style>
+</head>
+<body>
+    <h3 id="title">제목1입니다</h3>
+    <h3 >LEEJUNGEUN</h3>
+    <h3 id="title01">leejungeun</h3>
+    <p class="txt"><i>문단태그1입니다</i></p>
+    <p class="txt"><em>문단태그2입니다</em></p>
+    <p style="font-style: italic;"><b>문단태그3입니다</b></p>   <!--그냥 굵게만 : b  -->
+    <p><strong>문단태그4입니다</strong></p>     <!--html에서 강조 : strong  -->
+    <br><br><br>
+
+    <p class="text">
+      <span class="ttt01">aaaaaaaaaa</span><br>
+      <span class="ttt02">aaaaaaaaaa</span><br>
+      <span class="ttt03">aaaaaaaaaa</span><br>
+      <span class="ttt04">aaaaaaaaaa</span><br>
+      <span class="ttt05">aaaaaaaaaa</span><br>
+    </p>
+    <a href="#" style="text-decoration: none;">버튼입니다</a>
+
+    <br><br><br><br><br>
+  
+</body>
+</html>

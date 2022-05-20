@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 속성 - 배치</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            list-style: none;
+            float: left;
+            font-size: 30px;
+        }
+        div{
+            width: 150px;
+            height: 150px;
+        }
+        .box1{
+            float: left;
+            background-color:cornflowerblue;
+            padding:50px;
+            box-sizing: border-box;
+            margin: 100px 100px 0 50px;
+
+        }
+        .box2{
+            float: left;
+            background-color:gold;
+        }
+        .box3{
+            clear: both;
+            /* 앞에 float 무시한다 */
+            /* 한줄을 블록처럼 꽉 채워준다 */
+            float: left;
+            background-color:lightpink
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box1">box01</div>
+    <div class="box2">box02</div>
+    <div class="box3">box03</div>
+
+    <!-- <br><br><br><br>
+    <ul>
+        <li>menu</li>
+        <li>menu</li>
+        <li>menu</li>
+        <li>menu</li>
+    </ul> -->
+</body>
+</html>
