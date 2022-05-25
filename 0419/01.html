@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위치 설정(상대값)</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 150px;
+            height: 150px;
+        }
+        .box1{
+            /*float는 기준잡아주는 것이다
+            다 같이 left, right 해야한다
+            
+            위에서 부터 박스가 만들어져서 내려와야 한다
+            
+            clear:both;
+            - 다음줄 안에 꽉 채워준다
+            한줄에 2개 박스
+            그다음줄에 1개 박스 이런식으로 적용하고 싶을때*/
+            
+            margin: 0 auto;
+            
+            /*
+            상대적이다!!!
+            auto는 현재 화면에서 가운데 정렬 양쪽에 태그가 없어야 한다
+            
+            1. 좌우에 다른요소는 없어야 한다
+            2. 반드시 가로값이 있어야 한다
+            3. float와 margin을 쓰면 float가 우선적이다!! margin은 무시한다*/
+            background-color: rgb(184, 140, 255);
+        }
+        .box2{
+            display: none;
+            float: left;
+            background-color: rgb(154, 227, 158);
+        }
+        .box3{
+            display: none;
+            float: left;
+            background-color: rgb(138, 196, 255);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+</body>
+</html>
